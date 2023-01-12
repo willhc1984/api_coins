@@ -1,0 +1,29 @@
+.card{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(231, 231, 231);
+    border-radius: 10px;
+    margin: .5rem .5rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+}
+
+.card:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    transform: scale(0.9);
+
+}
+
+.card h5{
+    font-size: 25px;
+}
