@@ -24,8 +24,6 @@ function App() {
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = coinsData.slice(firstPostIndex, lastPostIndex);
 
-  console.log(currentPosts);
-
   return (
     <div className="row d-flex justify-content-center">
       <h1>Crypto-Coin List</h1>

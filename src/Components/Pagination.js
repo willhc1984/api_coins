@@ -10,11 +10,11 @@ function Pagination({ totalPosts, postsPerPage, setCurrentPage }){
 
     return(
         <nav aria-label="..." className={styles.nav}>
-            <ul class="pagination pagination-lg justify-content-center">
+            <ul className="pagination pagination-lg justify-content-center flex-wrap">
                 {pages.map((page, index) => {
                     return(
-                        <li class="page-item" >
-                            <a class="page-link" href="/#" onClick={() => setCurrentPage(page)}>{page}</a>
+                        <li className="page-item" key={index} >
+                            <a className="page-link" href="/#" onClick={() => setCurrentPage(page)}>{page}</a>
                         </li>
                     )
                 })}
